@@ -2,11 +2,14 @@
 > 데이터의 타입을 다른 타입으로 변환하는 것을 뜻함
 > 자바스크립트는 타입 검사가 유연한편
 
+### 형 변환 목적
+> 다른 타입의 데이터들의 연산이나 비교, 조건식을 처리해야할 때 사용된다
+
 ### 형 변환 종류
 > 1. 암시적 형 변환 (Implicit Type Conversion)
 > 2. 명시적 형 변환 (Explicit Type Conversion)
 
-## 암시적 형 변환
+## 암시적 형 변환 (Implicit Type Conversion)
 > 자바스크립트 엔진이 연산이나 계산처리가 필요할때 따라서 자동으로 타입을 변환하는 것을 뜻한다
 
 ### 문자열 변환
@@ -30,15 +33,16 @@
 
 
 ### 숫자형 변환
-> Number Type 즉, 숫자형 타입으로 변환하는 함수
+> Number Type 즉, 숫자형 타입으로 변환
 1. Number()
+
 2. parseInt()
 3. parseFloat()
 
 ---
 
 ### 문자열 변환
-> String Type 즉, 문자열 타입으로 변환하는 함수
+> String Type 즉, 문자열 타입으로 변환
 1. String()
 2. value.toString()
 3. toFixed()
@@ -46,7 +50,6 @@
 ---
 
 ### 불리언 변환
-> Boolean Type 즉, 불리언 타입으로 변환하는 함수
+> Boolean Type 즉, 불리언 타입으로 변환
 1. Boolean()
-
 
