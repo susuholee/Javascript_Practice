@@ -58,4 +58,9 @@ str.slice(시작인덱스, 끝인덱스);
 let str = "Hello";
 
 str.slice(1, 4);   // "ell"
+
+
+// 확장자 파일 추출
+let str1 = "index.html";
+str1.slice(-4); // html
 ```
