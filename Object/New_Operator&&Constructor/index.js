@@ -24,3 +24,28 @@ function Animal(name) {
 
 let animal = new Animal("고양이");
 console.log("이름:", animal.name);
+
+// 문제 2. 
+// User라는 생성자 함수를 만들어라.
+// 사용자 이름(username)과 나이(age)를 저장한다.
+// introduce라는 메서드를 추가한다.
+// 실행하면 아래처럼 출력되어야 한다.
+// 안녕하세요, 저는 철수이고 20살입니다.
+// new를 사용해서 객체를 하나 생성하고
+// introduce()를 실행하라.
+
+// 조건
+// 반드시 생성자 함수로 만들 것
+// new 사용할 것
+// this 사용할 것
+
+function User(username, age) {
+    this.username = username;
+    this.age = age;    
+    this.introduce = function() {
+        console.log(`안녕하세요 저는 ${this.username}이고 ${this.age}살입니다.`)
+    } 
+}
+
+let user = new User('철수', 20);
+user.introduce();
