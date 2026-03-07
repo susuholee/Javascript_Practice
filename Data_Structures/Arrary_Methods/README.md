@@ -78,3 +78,53 @@ arr.lastIndexOf(value);
 arr.includes(vlaue);
 ```
 
+### find
+> 배열에서 조건에 맞는 첫 번째 요소를 구하는 메서드
+> 반환값은 찾으면 첫 번째 값 반환, 못 찾으면 undefined
+
+```js
+arr.find(function(item, index, array) {
+    // true가 반환되면 반복이 멈추고 해당 요소를 반환
+    // // 조건에 해당하는 요소가 없으면 undefined를 반환
+});
+```
+find 매개변수 
+1. item : 함수를 호출할 요소
+2. index : 요소의 인덱스
+3. array : 원본 배열
+
+### findIndex
+> find 메서드와 마찬가지로 같은 동작을 함
+> 차이점은 반환 값, findIndex는 해당하는 첫 번째 인덱스
+
+```js
+array.findIndex(function(item, index, array) {
+});
+```
+
+### filter
+> 배열에서 조건에 맞는 요소들을 모두 찾아서 새로운 배열로 반환
+> 반환값은 배열, 못찾으면 빈 배열 반환 
+
+```js
+arr.filter(function(item, index, array) {
+});
+```
+
+filter 매개변수
+1. item : 함수를 호출할 요소
+2. index : 요소의 인덱스
+3. array : 원본 배열
+
+## 배열을 변형하는 메서드
+
+### map 
+> 배열을 순회하면서 각 값을 변형하면서 새로운 배열로 반환하는 메서드
+> 반환값은 배열
+> return 해야할 값이 있어야함, 없으면 undefiend가 들어간 배열로 반환
+
+```js
+arr.map(function(item, index, array) {
+    return // 반환해야할 값
+})
+```
